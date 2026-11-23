@@ -11,7 +11,7 @@ public class TitleNormalizer {
         }
 
         String title2 = title.trim().replaceAll("\\s+", " ");
-        String capLetter = title.substring(0,1).toUpperCase();
+        String capLetter = title2.substring(0,1).toUpperCase();
 
     return capLetter + title2.substring(1);
     }
