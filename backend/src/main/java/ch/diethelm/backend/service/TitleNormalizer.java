@@ -3,6 +3,6 @@ package ch.diethelm.backend.service;
 public class TitleNormalizer {
 
     public static String normalize(String text) {
-        return null;
+        return text.trim();
     }
 }
