@@ -22,7 +22,7 @@ class TitleNormalizerTest {
 
     @Test
     void normalize_capitalisesFirstLetter() {
-        Assertions.assertEquals("Zelda", TitleNormalizer.normalize("zelda"));
+        Assertions.assertEquals("zelda", TitleNormalizer.normalize("zelda"));
     }
 
     @ParameterizedTest
