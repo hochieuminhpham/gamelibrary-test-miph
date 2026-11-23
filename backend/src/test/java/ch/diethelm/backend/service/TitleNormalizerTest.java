@@ -16,4 +16,9 @@ class TitleNormalizerTest {
     void normalize_collapsesMultipleSpaces() {
         Assertions.assertEquals("The Legend of Zelda", TitleNormalizer.normalize("The  Legend  of  Zelda"));
     }
+
+    @Test
+    void normalize_capitalisesFirstLetter() {
+        Assertions.assertEquals("Zelda", TitleNormalizer.normalize("zelda"));
+    }
 }
